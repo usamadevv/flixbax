@@ -13,6 +13,7 @@ const PORT = process.env.PORT || 4000;
 const path = require("path");
 const RoleRoute = require('./Routes/Role.route');
 const Contractorroute = require('./Routes/Contractor.route');
+const Projectroute = require('./Routes/Project.route');
 
 __dirname = path.resolve()
 app.use(express.static(path.join(__dirname, './myapp/build')))
@@ -55,6 +56,7 @@ app.use('/api/signup', subscriberroute);
 app.use('/api/user', UserRouteProf);
 app.use('/api/role', RoleRoute);
 app.use('/api/cont', Contractorroute);
+app.use('/api/project', Projectroute);
 
 
 
