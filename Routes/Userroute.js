@@ -62,7 +62,7 @@ UserRouteprof.route('/getallusers').get(function(req, res) {
                     res.send(err)
                 }
                 else{
-                    res.status(200).json({users})
+                    res.status(200).json({User:users})
                 }   
                 
              }  

@@ -8,20 +8,31 @@ let user = new Schema({
     name: {
         type: String
     },
-    fname: {
+    address: {
         type: String
     },
-    lname: {
+    email: {
         type: String,
     }
     ,
-    email: {
+    password: {
         type: String,
     },
 
 
 
-    phone: {
+    timezone: {
+        type: String,
+    },
+    ptype: {
+        type: String,
+
+
+    },
+    payrate: {
+        type: String
+    },
+    billrate: {
         type: String,
     },
     role: {
